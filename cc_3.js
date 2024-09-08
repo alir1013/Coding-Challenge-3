@@ -23,7 +23,7 @@ console.log("Performance Rating:",determinePerformanceRating(averageSales)); //O
 
 //Task 3:Creating a function to identify top and bottom performers
 function findTopAndBottomPerformers(salesPerson)
-const salesPerson= [
+let salesPerson= [
     {employee: "Khalid", averageSales: 5648},
     {employee:"Sarah", averageSales: 3012},
     {employee:"Laila", averageSales: 2019},
