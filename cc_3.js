@@ -36,8 +36,8 @@ function findTopAndBottomPerformers(salesPerson){
         {name: "Alicia", averageSakes: 5921}
     ];
     
-
-
+console.log("TopPerformer:",topPerformer);
+console.log("BottomPerformer:",bottomPerformer);
     
 
 
