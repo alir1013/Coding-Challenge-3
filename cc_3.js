@@ -22,7 +22,7 @@ let averageSales= (calculateAverageSales(sales));
 console.log("Performance Rating:",determinePerformanceRating(averageSales)); //Output: Needs Improvement 
 
 //Task 3:Creating a function to identify top and bottom performers
-function findTopAndBottomPerformers(salesPerson);
+function findTopAndBottomPerformers(salesPerson)
     const maxSales=Math.max(...salesPerson.map(people=>people.totalSales));
     const minSales= Math.min(...salesPerson.map(people=>people.totalSales));
 
