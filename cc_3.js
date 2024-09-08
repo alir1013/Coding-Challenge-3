@@ -4,6 +4,6 @@ function calculateAverageSales (sales){
     let averageSales=totalSales/sales.length; 
     return averageSales;
 }
-const sales=[100,563,901,423,712]
-console.log(calculateAverageSales(sales));
+const sales=[100,563,901,423,712] //Sales Data 
+console.log("Average Sales",calculateAverageSales(sales)); //Output:539.8
 
