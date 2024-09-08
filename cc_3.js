@@ -18,4 +18,4 @@ function determinePerformanceRating (averageSales){
     if(averageSales< 4000)
         return "Needs Improvement"; //Output:
 }
-console.log("Performance Rating:",determinePerformanceRating(sales));
+console.log("Performance Rating:",determinePerformanceRating(averageSales));
