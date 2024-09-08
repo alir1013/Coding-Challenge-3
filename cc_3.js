@@ -18,5 +18,29 @@ function determinePerformanceRating (averageSales){
     if(averageSales< 4000)
         return "Needs Improvement"; 
 }
-let averageSales= (calculateAverageSales(sales));
-console.log("Performance Rating:",determinePerformanceRating(averageSales));
+let averageSales= (calculateAverageSales(sales)); 
+console.log("Performance Rating:",determinePerformanceRating(averageSales)); //Output: Needs Improvement 
+
+//Task 3:Creating a function to identify top and bottom performers
+function findTopAndBottomPerformers(salesPerson);
+    const maxSales=Math.max(...salesPerson.map(people=>people.totalSales));
+    const minSales= Math.min(...salesPerson.map(people=>people.totalSales));
+
+    const {topPerformer,bottomPerformer}= salesPerson.reduce;
+    const salesPerson= [
+        {name: "Khalid", averageSales: 5648},
+        {name:"Sarah", averageSales: 3012},
+        {name:"Laila", averageSales: 2019},
+        {name: "Alicia", averageSakes: 5921}
+    ];
+    const performers= findTopAndBottomPerformers (salesPerson);
+return {
+    topPerformer: topPerformer.name,
+    bottomPerformer: bottomPerformer.name
+    
+};
+
+    
+
+
+
