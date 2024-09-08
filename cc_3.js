@@ -4,4 +4,5 @@ function calculateAverageSales (sales){
     totalsales=sales
     return totalsales/sales.length;
 }
+const sales= [100,563,901,423,712]
 console.log(calculateAverageSales(sales));
