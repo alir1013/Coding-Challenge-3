@@ -22,25 +22,20 @@ let averageSales= (calculateAverageSales(sales));
 console.log("Performance Rating:",determinePerformanceRating(averageSales)); //Output: Needs Improvement 
 
 //Task 3:Creating a function to identify top and bottom performers
-function findTopAndBottomPerformers(salesPerson)
-    let maxSales=Math.max(...salesPerson.map(people=>people.totalSales));
-    let minSales= Math.min(...salesPerson.map(people=>people.totalSales));
-
-    const {topPerformer,bottomPerformer}= salesPerson.reduce;
+function findTopAndBottomPerformers(salesPerson){
+    const maxSales= Math.max (...salesPerson.map(salesPerson=> salesPerson.totalSales));
+    const minSales=Math.min (...salesPerson.map(salesPerson=>salesPerson.totalSales));
+    const topPerformer= salesPerson.find(salesPerson =>salesPerson.totalSales === maxSales);
+    const bottomPerformer=salesPerson.find(salesPerson=>salesPerson.totalSales===minSales);
+    return (topPerformer,bottomPerformer)
+}
     const salesPerson= [
         {name: "Khalid", averageSales: 5648},
         {name:"Sarah", averageSales: 3012},
         {name:"Laila", averageSales: 2019},
         {name: "Alicia", averageSakes: 5921}
     ];
-    const performers= findTopAndBottomPerformers (salesPerson);
-return {
-    topPerformer: topPerformer.name,
-    bottomPerformer: bottomPerformer.name
     
-};
- console.log("TopPerformer:", topPerformer);
- console.log("BottomPerformer:",bottomPerformer);
 
 
     
