@@ -5,5 +5,5 @@ function calculateAverageSales (sales){
     return averageSales;
 }
 const sales=[100,563,901,423,712] //Sales Data 
-console.log("Average Sales",calculateAverageSales(sales)); //Output:539.8
+console.log("Average Sales:",calculateAverageSales(sales)); //Output:539.8
 
