@@ -10,11 +10,12 @@ console.log("Average Sales:",calculateAverageSales(sales)); //Output:539.8
 //Task 2: Create a function to determine performance rating
 function determinePerformanceRating (averageSales){
     if (averageSales>10000)
-        return "Excellent";
+        return "Excellent"; //Output:
     else if (averageSales >= 7000 && averageSales <= 10000)
-        return "Good";
+        return "Good"; //Output:
     else if (averageSales >= 4000 && averageSales <= 7000)
-        return "Satisfactory";
+        return "Satisfactory"; //Output:
     if(averageSales< 4000)
-        return "Needs Improvement";
+        return "Needs Improvement"; //Output:
 }
+console.log("Performance Rating:",determinePerformanceRating(averageSales));
