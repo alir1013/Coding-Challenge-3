@@ -23,11 +23,11 @@ console.log("Performance Rating:",determinePerformanceRating(averageSales)); //O
 
 //Task 3:Creating a function to identify top and bottom performers
 function findTopAndBottomPerformers(salesPerson)
-let salesPerson= [
-    {employee: "Khalid", averageSales: 5648},
-    {employee:"Sarah", averageSales: 3012},
-    {employee:"Laila", averageSales: 2019},
-    {employee: "Alicia", averageSales: 5921}
+const salesPerson= [
+    {employee: "Khalid", totalSales: 5648},
+    {employee:"Sarah", totalSales: 3012},
+    {employee:"Laila", totalSales: 2019},
+    {employee: "Alicia", totalSales: 5921}
 ];
 {
     const maxSales= Math.max (...salesPerson.map(salesPerson=> salesPerson.totalSales)); //Finding max sales
@@ -40,6 +40,10 @@ let salesPerson= [
 console.log("TopPerformer:",topPerformer); //Output: Alicia 
 console.log("BottomPerformer:",bottomPerformer); //Output: Laila 
     
+//Task 4: Combine Functions to Generate a Performance Report
+function generatePerformanceReport (salesData) {
+    const salesReports = salesData.map (salesPerson =>
+}
 
 
 
