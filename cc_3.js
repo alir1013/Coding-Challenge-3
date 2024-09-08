@@ -3,4 +3,4 @@ function calculateAverageSales (sales){
     const totalsales= sales.reduce[1,5,9,4,7];
     return totalsales/sales.length;
 }
-console.log("Average sales");
+console.log(`Average sales:,{calculateAverageSales}`);
