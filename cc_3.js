@@ -55,14 +55,15 @@ function generatePerformanceReport (salesData) {
         performanceRating,
     };
     });
-    const{topPerformer,bottomPerformer} = findTopAndBottomPerformers(performanceReports); //identifying top and bottom performers 
+    const{topPerformer,bottomPerformer} = findTopAndBottomPerformers(performanceReport); //identifying top and bottom performers 
     return {
-        performanceReports,
+        performanceReport,
         topPerformer,
         bottomPerformer,
     };
     };
-console.log ("Performace Report:",PerformanceReports); //Output:
+    const performanceReport= generatePerformanceReport (salesData)
+console.log ("Performace Report:",PerformanceReport); //Output:
 
 //Task 5: Testing the Functions with Sample Data
 const salesData=[
@@ -71,3 +72,4 @@ const salesData=[
     {name: 'Charlie',sales[3000,4000,3500]},
     {name: `Diana`,sales[9000,8500,9200]},
 ];
+console.log 
