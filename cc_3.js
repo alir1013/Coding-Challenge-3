@@ -54,5 +54,5 @@ function generatePerformanceReport (salesData) {
         salesReports,
         topPerformer,
         bottomPerformer,
-    }:
+    };
     }
