@@ -39,7 +39,7 @@ const salesPerson= [
     {employee:"Laila",totalSales:2019},
     {employee:"Alicia",totalSales:5921}
 ];
-const {topPerformer,bottomPerformer}= findTopAndBottomPerformers (salesPeople);
+const {topPerformer,bottomPerformer}= findTopAndBottomPerformers (salesPerson);
 
 console.log ("TopPerformer:",topPerformer.employee); //Output:Alicia
 console.log ("BottomPerformer:", bottomPerformer.employee); //Output:Laila
