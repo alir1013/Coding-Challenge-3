@@ -70,4 +70,4 @@ const salesData=[
     {name: `Diana`,sales:[9000,8500,9200]},
 ];
 const performanceRating= generatePerformanceReport (salesData);
-console.log ("Performace Report:",performanceReport);
+console.log ("Performace Report:",performanceRating);
