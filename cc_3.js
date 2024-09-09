@@ -25,16 +25,16 @@ console.log("Performance Rating:",determinePerformanceRating(averageSales)); //O
 function findTopAndBottomPerformers(salesPerson)
     const maxSales= Math.max (...salesPerson.map(salesPerson=> salesPerson.totalSales)); //Finding max sales
     const minSales=Math.min (...salesPerson.map(salesPerson=>salesPerson.totalSales)); //Finding min sales
+    const salesPerson= [
+        {employee: "Khalid", totalSales: 5648},
+        {employee:"Sarah", totalSales: 3012},
+        {employee:"Laila", totalSales: 2019},
+        {employee: "Alicia", totalSales: 5921}
+        ]
     const topPerformer= salesPerson.find(salesPerson =>salesPerson.totalSales === maxSales);
     const bottomPerformer=salesPerson.find(salesPerson=>salesPerson.totalSales===minSales);
     return (topPerformer,bottomPerformer)
 
-const salesPerson= [
-{employee: "Khalid", totalSales: 5648},
-{employee:"Sarah", totalSales: 3012},
-{employee:"Laila", totalSales: 2019},
-{employee: "Alicia", totalSales: 5921}
-]
 console.log("TopPerformer:",topPerformer); //Output: Alicia 
 console.log("BottomPerformer:",bottomPerformer); //Output: Laila 
     
