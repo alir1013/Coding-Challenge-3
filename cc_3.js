@@ -62,7 +62,6 @@ function generatePerformanceReport (salesData) {
         bottomPerformer,
     };
     };
-    const performanceReport= generatePerformanceReport (salesData);
 console.log ("Performace Report:",PerformanceReport); //Output:
 
 //Task 5: Testing the Functions with Sample Data
