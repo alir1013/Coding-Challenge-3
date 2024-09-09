@@ -62,9 +62,6 @@ function generatePerformanceReport (salesData) {
         bottomPerformer,
     };
     };
-const performanceRating= generatePerformanceReport (salesData);
-console.log ("Performace Report:",PerformanceReport); //Output:
-
 //Task 5: Testing the Functions with Sample Data
 const salesData=[
     {name: 'Alice',sales:[12000,15000,13000]},
@@ -72,5 +69,5 @@ const salesData=[
     {name: 'Charlie',sales:[3000,4000,3500]},
     {name: `Diana`,sales:[9000,8500,9200]},
 ];
-
-console.log ()
+const performanceRating= generatePerformanceReport (salesData);
+console.log ("Performace Report:",PerformanceReport);
