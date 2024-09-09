@@ -38,7 +38,7 @@ const salesPeople= [
     {employee:"Alicia",totalSales:5921}
 ];
 console.log ("TopPerformer:",topPerformer); //Output:Alicia
-console.log ("BottomPerformer:" bottomPerformer); //Output:Laila
+console.log ("BottomPerformer:", bottomPerformer); //Output:Laila
    
 //Task 4: Combine Functions to Generate a Performance Report
 function generatePerformanceReport (salesData) {
