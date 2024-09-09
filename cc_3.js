@@ -57,7 +57,7 @@ function generatePerformanceReport (salesData) {
     });
     const{topPerformer,bottomPerformer} = findTopAndBottomPerformers(salesData); //identifying top and bottom performers 
     return {
-        performanceReport,
+        salesReport,
         topPerformer,
         bottomPerformer,
     };
