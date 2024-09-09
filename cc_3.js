@@ -62,4 +62,4 @@ function generatePerformanceReport (salesData) {
         bottomPerformer,
     };
     };
-console.log ("Performace Report:",PerformanceRating);
+console.log ("Performace Report:",PerformanceReports);
