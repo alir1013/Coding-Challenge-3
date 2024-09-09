@@ -38,9 +38,21 @@ const salesPerson= [
 console.log("TopPerformer:",topPerformer); //Output: Alicia 
 console.log("BottomPerformer:",bottomPerformer); //Output: Laila 
     
-
-    
-
-
-
-
+//Task 4: Combine Functions to Generate a Performance Report
+function generatePerformanceReport (salesData) {
+    const salesReports = salesData.map (salesPerson => {
+    const averageSales = calculateAverageSales (salesPerson.salesFigures); //Computing average sales for each salesperson
+    const performanceRating= determinePerformanceRating(averageSales); // assinging a performance rating to each salesperson
+    return {
+        employee: salesPerson.employee,
+        averageSales,
+        performanceRating,
+    };
+    });
+    const {topPerformer,bottomPerformer} = findTopAndBottomPerformers(salesData); //to identify top and bottom performers 
+    return {
+        salesReports,
+        topPerformer,
+        bottomPerformer,
+    }:
+    }
